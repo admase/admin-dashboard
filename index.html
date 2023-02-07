@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US" class="fullscreen no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Admin Dashboard</title>
+
+  <meta name="author" content="Danny A. Mase">
+  <meta name="description" content="An admin's dashboard webpage">
+  <meta name="keywords" content="HTML5, CSS3, Admin, Dashboard">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <!--/ Wrapper /-->
+  <div class="wrapper">
+    <!--/ SideBar /-->
+    <div class="sidebar">
+      <div class="logo-box my-5">
+        <a href="index.html" class="sidebar-brand"><i class="fas fa-gauge fa-fw"></i> Dashboard</a>
+      </div>
+      <a href="#home"><i class="fas fa-home fa-fw"></i>&nbsp;&nbsp; Home</a>
+      <a href="#profile"><i class="fas fa-id-card fa-fw"></i>&nbsp;&nbsp; Profile</a>
+      <a href="#messages"><i class="fas fa-message fa-fw"></i>&nbsp;&nbsp; Messages</a>
+      <a href="#history"><i class="fas fa-clock fa-fw"></i>&nbsp;&nbsp; History</a>
+      <a href="#tasks"><i class="fas fa-file-export fa-fw"></i>&nbsp;&nbsp; Tasks</a>
+      <a href="#community"><i class="fas fa-people-group fa-fw"></i>&nbsp;&nbsp; Community</a>
+      <hr class="divider" />
+      <a href="#settings"><i class="fas fa-gear fa-fw"></i>&nbsp;&nbsp; Settings</a>
+      <a href="#support"><i class="fas fa-circle-question fa-fw"></i>&nbsp;&nbsp; Support</a>
+      <a href="#privacy"><i class="fas fa-shield fa-fw"></i>&nbsp;&nbsp; Privacy</a>
+      <div class="copyright">
+        <span>Made with <i class="fa fa-heart"></i> by Danny A. Mase</span>
+        <span>Copyright &copy;2023 &middot; All Rights Reserved</span>
+      </div>
+    </div>
+
+    <div class="main" id="main">
+      <!--/ Header /-->
+      <div class="header" id="header">
+        <div class="header-top">
+          <div class="mb-3 search-box">
+            <button type="button" class="btn search-btn">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+            <input type="search" id="searchInput" placeholder="" aria-label="Search" aria-required="true"
+              class="form-control" />
+          </div>
+          <div class="link-box">
+            <ul>
+              <li class="bell-icon">
+                <i class="fas fa-bell fa-fw"></i>&nbsp;&nbsp;
+              </li>
+              <li class="avatar">
+                <i class="fas fa-user-ninja fa-fw"></i>&nbsp;&nbsp;
+                <strong>Mike Larry</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="header-bottom-left">
+            <ul>
+              <li class="avatar">
+                <i class="fas fa-user-ninja fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </li>
+              <li class="user">
+                <small>Hi there,</small> <br />
+                <strong>Mike Larry (&amp;mike)</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="header-bottom-right">
+            <ul>
+              <li><a href="#" class="pill link-pill">New</a></li>
+              <li><a href="#" class="pill link-pill">Upload</a></li>
+              <li><a href="#" class="pill link-pill">Share</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--/ Projects Section /-->
+      <div class="projects">
+        <div class="row row-1">
+          <div class="column">
+            <h4>Your Projects</h4>
+            <div class="card">
+              <h5>Super Cool Project</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                quos delectus iusto sunt voluptate autem praesentium
+                necessitatibus alias nihil eaque.
+              </p>
+
+              <div class="project-links">
+                <a href="#" title="Like Project"><i class="far fa-star fa-fw"></i></a>
+                <a href="#" title="View Projedt"><i class="far fa-eye fa-fw"></i></a>
+                <a href="#" title="Share Project"><i class="fas fa-share-nodes fa-fw"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h4 class="d-none">Nothing goes here...</h4>
+            <div class="card">
+              <h5>Less Cool Project</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                quos delectus iusto sunt voluptate autem praesentium
+                necessitatibus alias nihil eaque.
+              </p>
+
+              <div class="project-links">
+                <a href="#" title="Like Project"><i class="far fa-star fa-fw"></i></a>
+                <a href="#" title="View Projedt"><i class="far fa-eye fa-fw"></i></a>
+                <a href="#" title="Share Project"><i class="fas fa-share-nodes fa-fw"></i></a>
+              </div>
+            </div>
+          </div>
+          <h4>Announcements</h4>
+          <div class="column">
+            <div class="card-box">
+              <h5>Site Maintenance</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                quos delectus iusto sunt voluptate autem praesentium
+                necessitatibus alias nihil eaque.
+              </p>
+              <hr class="m-0" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-2">
+          <div class="column">
+            <div class="card">
+              <h5>Impossible App</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                quos delectus iusto sunt voluptate autem praesentium
+                necessitatibus alias nihil eaque.
+              </p>
+
+              <div class="project-links">
+                <a href="#" title="Like Project"><i class="far fa-star fa-fw"></i></a>
+                <a href="#" title="View Projedt"><i class="far fa-eye fa-fw"></i></a>
+                <a href="#" title="Share Project"><i class="fas fa-share-nodes fa-fw"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <h5>Easy Peasy App</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                quos delectus iusto sunt voluptate autem praesentium
+                necessitatibus alias nihil eaque.
+              </p>
+
+              <div class="project-links">
+                <a href="#" title="Like Project"><i class="far fa-star fa-fw"></i></a>
+                <a href="#" title="View Projedt"><i class="far fa-eye fa-fw"></i></a>
+                <a href="#" title="Share Project"><i class="fas fa-share-nodes fa-fw"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card-box">
+              <h5>Community Share Day</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                quos delectus iusto sunt voluptate autem praesentium
+                necessitatibus alias nihil eaque.
+              </p>
+              <h5>Udated Privacy Policy</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-3">
+          <div class="column">
+            <h4 class="d-none">Nothing goes here...</h4>
+            <div class="card">
+              <h5>Ad Blocker</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                quos delectus iusto sunt voluptate autem praesentium
+                necessitatibus alias nihil eaque.
+              </p>
+
+              <div class="project-links">
+                <a href="#" title="Like Project"><i class="far fa-star fa-fw"></i></a>
+                <a href="#" title="View Projedt"><i class="far fa-eye fa-fw"></i></a>
+                <a href="#" title="Share Project"><i class="fas fa-share-nodes fa-fw"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h4 class="d-none">Nothing goes here...</h4>
+            <div class="card">
+              <h5>Money Maker</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                quos delectus iusto sunt voluptate autem praesentium
+                necessitatibus alias nihil eaque.
+              </p>
+
+              <div class="project-links">
+                <a href="#" title="Like Project"><i class="far fa-star fa-fw"></i></a>
+                <a href="#" title="View Projedt"><i class="far fa-eye fa-fw"></i></a>
+                <a href="#" title="Share Project"><i class="fas fa-share-nodes fa-fw"></i></a>
+              </div>
+            </div>
+          </div>
+          <h4>Trending</h4>
+          <div class="column">
+            <div class="card-box">
+              <div class="card-item">
+                <ul>
+                  <li class="avatar">
+                    <i class="far fa-sad-cry fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </li>
+                  <li class="user">
+                    <small>@tegan</small> <br />
+                    World Peace Builder
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-item">
+                <ul>
+                  <li class="avatar">
+                    <i class="fas fa-user-ninja fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </li>
+                  <li class="user">
+                    <small>@mike</small> <br />
+                    Super Cool Project
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-item">
+                <ul>
+                  <li class="avatar">
+                    <i class="fas fa-sailboat fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </li>
+                  <li class="user">
+                    <small>@kendall</small> <br />
+                    Life Changing App
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-item">
+                <ul>
+                  <li class="avatar">
+                    <i class="fas fa-t-shirt fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </li>
+                  <li class="user">
+                    <small>@alex</small> <br />
+                    No Traffic Maker
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</body>
+
+</html>
